@@ -7,4 +7,4 @@
 1.4.1 - Recursion Tree method
 1.5 - Space Complexity
 
-Drive link: https://drive.google.com/drive/folders/1N3Aj0kEGerD4LzOTvI6azRymEJymPv-d 
+Check the drive for detailed notes.
