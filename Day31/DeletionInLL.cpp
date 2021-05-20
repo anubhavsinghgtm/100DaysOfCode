@@ -27,20 +27,29 @@ struct Node{
 // = = = =  print function for linked list  = = = =
 
 void printLL(Node *head){
+    if (head==0 || head->data==-1){
+        cout<<"NULL"<<endl;
+        return;
+    }
+    //if (head->data == -1)
+     //   cout<<"NULL";
+    else{
     while(head!=NULL){
         cout<<head->data<<"->";
         head = head->next;
     }
     cout<<"NULL"<<endl;
 }
+}
 
 // === delete the first node ====
 Node *deleteAtBeg(Node *head){
-    if(head==NULL){
+    if(head->data==-1){
         return head;
     }
-    head = head->next;
-    return head;
+    Node *temp = head->next;
+    delete head;
+    return temp;
 }
 
 // ==== delete at last ====
@@ -92,8 +101,8 @@ int main(){
     printLL(head); // print linked list
     head = deleteAtBeg(head);
     printLL(head);
-    head = deleteAtEnd(head);
-    printLL(head);
+    //head = deleteAtEnd(head);
+    //printLL(head);
 
 return 0;
 }
